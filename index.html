@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+    <section>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="#home" class="dot active" data-scroll="home">
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#about" class="dot" data-scroll="about">
+                        <span>About</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#project" class="dot" data-scroll="project">
+                        <span>Project</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" class="dot" data-scroll="contact">
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!------------                Home Section               ----------->
+        <section class="sec" id="home">
+            <div id="header">
+                <div class="container">
+                    <div class="header-text">
+                        <p>UI/UX Designer</p>
+                        <h1>Hello, <br>I'm <span>Vedant,</span> <br> an EXTC Engineer.</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!------------                      About Section                      ------------->
+        <section class="sec" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="https://dummyimage.com/350x500/808080/fff" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title"><span style="color: red;">A</span>bout <span style="color: red;">M</span>e
+                        </h1>
+                        <p>First-year EXTC Engineering student with a passion for technology and innovation. Proficient
+                            in JAVA, C,
+                            Python, and HTML, with hands-on PCB designing skills. Particularly interested in the
+                            software industry and
+                            electronics projects like drone development. Eager to contribute enthusiasm, willingness to
+                            learn, and a
+                            foundation of technical skills to dynamic opportunities in EXTC Engineering, software
+                            development, and
+                            electronics projects.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing Web/App Interface</li>
+                                <li><span>Web Development</span><br>Web App Development</li>
+                                <li><span>App Development</span><br>Building Android/iOS Apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>2021-Currennt</span><br>Designing Web/App Interface</li>
+                                <li><span>2019-2021</span><br>Web App Development</li>
+                                <li><span>2016-2017</span><br>Building Android/iOS Apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>2023</span><br>Higher Secondary Certification</li>
+                                <li><span>2023 - Present</span><br>EXTC Engineering</li>
+                                <li><span>2017</span><br>Comments</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="sec" id="project">
+            <div class="project-text">
+                <h1><span>P</span>rojects</h1>
+            </div>
+            <div class="project-container">
+                <div class="project-box box-1" onclick="openProject1()">
+                    <p>Project 1</p>
+                    <div class="project-box-text">Text for Box 1</div>
+                </div>
+                <div class="project-box box-2" onclick="openProject2    ()">
+                    <p>Project 2</p>
+                    <div class="project-box-text">Text for Box 2</div>
+                </div>
+                <div class="project-box box-3" onclick="openProject3()">
+                    <p>Project 3</p>
+                    <div class="project-box-text">Text for Box 3</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec" id="contact">
+            <div id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="contact-left">
+                            <h1 class="sub-title">Contact Me</h1>
+                            <p><i class="fas fa-paper-plane"></i>vedantvpatil@gmail.com</p>
+                            <p><i class="fa-solid fa-phone"></i>+91 8591983211</p>
+                            <div class="social-icons">
+                                <div class="social-icons-nav">
+                                    <a href="https://www.instagram.com/" target="_blank"><i
+                                            class="fab fa-instagram"></i></a>
+                                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.google.com/search?num=5&sca_esv=6e8c819a630d1523&rlz=1C1YTUH_enIN1060IN1060&cs=0&sxsrf=ACQVn09-YEjKg5HWAlAKQDgj544ee_6t0Q:1709302479911&q=Vedant+Patil&stick=H4sIAAAAAAAAAOOwesSozi3w8sc9YSm5SWtOXmOU4BLzSsxLLEl0LkpNLEkNTk0sSs5wTixK4VnEyhOWmpKYV6IQkFiSmQMAU1P-XDsAAAA&sa=X&ved=2ahUKEwivs__4n9OEAxVywTgGHfhuASs4BRCcmgV6BAgBEAM&biw=1536&bih=730&dpr=1.25"
+                                        target="_blank"><i class="fab fa-google"></i></a>
+                                    <a href="https://web.whatsapp.com/" target="_blank"><i
+                                            class="fab fa-whatsapp"></i></a>
+                                </div>
+                            </div>
+                            <a href="Vedant Resume.pdf" class="btn btn2">Download CV</a>
+                        </div>
+                        <div class="contact-right">
+                            <form>
+                                <input type="text" name="Name" placeholder="Your Name" required>
+                                <input type="email" name="email" placeholder="Your email" required>
+                                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                                <button type="submit" class="btn btn2">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+<script src="script.js"></script>
+
+</html>
