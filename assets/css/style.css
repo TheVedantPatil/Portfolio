@@ -1,0 +1,262 @@
+/*---------- Fonts ----------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+/*---------- Universal ----------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: #0e1831;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+section { 
+    padding: 5rem 15%;
+}
+
+/*---------- Section ----------*/
+.section-title {
+    position: relative;
+    color: #3f70f4;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.section-title::after {
+    position: absolute;
+    content: "";
+    width: 64px;
+    height: 0.18rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 3rem;
+    background-color: #3f70f4;
+}
+
+/*---------- Header Section ----------*/
+.header {
+    padding: 0 15%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+}
+
+/*---------- Nav ----------*/
+.nav {
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+
+.nav-list a {
+    margin: 0 20px;
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link:hover {
+    position: relative;
+}
+
+.nav-link:hover::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0.18rem;
+    left: 0;
+    top: 2rem;
+    background-color: #3f70f4;
+}
+
+.active-link::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0.18rem;
+    left: 0;
+    top: 2rem;
+    background-color: #3f70f4;
+}
+
+/*---------- Home Section ----------*/
+#home {
+    padding: 10rem 15%;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-text h1 {
+    font-size: 3.5rem;
+}
+
+.home-text h1 span {
+    color: #3f70f4;
+}
+
+.button {
+    display: inline-block;
+    background-color: #3f70f4;
+    color: #fff;
+    margin-top: 20px;
+    padding: 0.75rem 2.5rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+}
+
+.button:hover {
+    box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
+}
+
+.home-social {
+    display: flex;
+    align-items: center;
+}
+
+.home-social a {
+    margin: 40px 20px 0 0;
+}
+
+.home-social-icon i {
+    width: max-content;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #0e1831;
+}
+
+.home-social-icon i:hover {
+    color: #3f70f4;
+}
+
+.home-img img{ 
+    width: 500px;
+    height: 500px;
+}
+
+
+/*---------- About Section ----------*/
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.about-img {
+    flex-basis: 35%;
+}
+
+.about-img img { 
+    width: 350px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.about-text {
+    flex-basis: 45%;
+}
+
+/*---------- Project Section ----------*/
+.project-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-img {
+    box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    margin-top: 100px;
+}
+
+.project-img img {
+    transition: 1s;
+}
+
+.project-img img:hover {
+    transform: scale(1.1);
+}
+
+/*---------- Contact Section ----------*/
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.contact-form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.contact-input {
+    width: 100%;
+    font-size: 0.932rem;
+    font-weight: 600;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1.5px solid #0e1831;
+    outline: none;
+    margin-bottom: 2rem;
+}
+
+.contact-button {
+    display: block;
+    border: none;
+    outline: none;
+    font-size: 0.938rem;
+    cursor: pointer;
+}
+
+/*---------- Footer ----------*/
+.footer {
+    background-color: #0e1831;
+    text-align: center;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.footer p, i { 
+    color: #fff;
+}
+
+.footer-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-social {
+    margin-bottom: 2rem;
+}
+
+.footer-icon {
+    font-size: 1.5rem;
+    margin: 0 1rem;
+}
+
