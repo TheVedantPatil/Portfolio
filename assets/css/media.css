@@ -1,0 +1,148 @@
+:root {
+    --color-1: #0e1831;
+    --color-2: #3f70f4;
+    --color-3: #fff;
+
+    /*---------- Fonts ----------*/
+    --font-semi: 600;
+    --body-font: "Poppins", sans-serif;
+    --big-font-size: 2rem;
+    --h2-font-size: 1.5rem;
+    --normal-font-size: 1rem;
+    --smaller-font-size: 0.75rem;
+
+    /*---------- Margin ----------*/
+    --mb-2: 1rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
+
+    /*---------- Z index ----------*/
+    --z-back: -10;
+    --z-fixed: 100;
+}
+
+
+@media screen and (min-width: 968px) {
+    :root {
+        --big-font-size: 3.5rem;
+        --h2-font-size: 2rem;
+        --normal-font-size: 1rem;
+        --smaller-font-size: .875rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Container */
+    .container {
+        padding: 5rem 10% 0;
+    }
+
+    /*---------- Nav ----------*/
+    .nav-list a {
+        margin: 0 5px 0;
+    }
+
+    /*---------- Header ----------*/
+    .header {
+        padding: 0 10%;
+    }
+
+    /*---------- Home ----------*/
+    .home {
+        height: 5rem auto;
+    }
+
+    .home-img {
+        width: 300px;
+        height: 300px;
+    }
+
+    /*---------- About ----------*/
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-img {
+        width: 300px;
+        margin-bottom: var(--mb-4);
+    }
+
+    .about-text {
+        margin-bottom: 5rem;
+    }
+
+    /*---------- Skills ----------*/
+    .skills-container {
+        flex-direction: column;
+    }
+
+    /*---------- Contact ----------*/
+    .contact-form {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    /*---------- Home ----------*/
+    .home {
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+    }
+
+    .home-img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .home-data {
+        text-align: center;
+    }
+
+    .home-title {
+        font-size: 3rem;
+    }
+
+    .home-social {
+        justify-content: center;
+    }
+
+    .home-social-icon {
+        margin: 20px;
+        font-size: var(--big-font-size);
+    }
+
+    /*---------- About ----------*/
+    .about-text {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .about-text p {
+        font-size: var(--normal-font-size);
+    }
+
+    /*---------- Contact ----------*/
+    .contact-form {
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width: 412px) {
+    .container {
+        padding: 10%;
+    }
+
+    /*---------- Header ----------*/
+    .header {
+        display: none;
+    }
+
+    /*---------- Home ----------*/
+    .home-title {
+        font-size: 2.5rem;
+    }
+}
