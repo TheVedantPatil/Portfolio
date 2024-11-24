@@ -113,6 +113,10 @@
         font-size: var(--big-font-size);
     }
 
+    .home-social-icon:hover {
+        color: var(--color-1);
+    }
+
     /*---------- About ----------*/
     .about-text {
         text-align: center;
@@ -121,6 +125,12 @@
 
     .about-text p {
         font-size: var(--normal-font-size);
+    }
+
+    /*---------- Projects ----------*/
+    .project-list div:hover {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transform: none;
     }
 
     /*---------- Contact ----------*/
@@ -144,5 +154,10 @@
     /*---------- Home ----------*/
     .home-title {
         font-size: 2.5rem;
+    }
+
+    .home-img {
+        width: 300px;
+        height: 300px;
     }
 }
