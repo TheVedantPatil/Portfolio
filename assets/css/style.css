@@ -190,11 +190,11 @@ img {
     color: var(--color-2);
 }
 
-.home-img {
+.home-img img{
     width: 400px;
     height: 400px;
     border-radius: 50%;
-    background: gray;
+    box-shadow: 0px 10px 100px rgba(63, 112, 244, 0.7);
 }
 
 /* Button */

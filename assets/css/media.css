@@ -54,7 +54,7 @@
         height: 5rem auto;
     }
 
-    .home-img {
+    .home-img img{
         width: 300px;
         height: 300px;
     }
@@ -91,7 +91,7 @@
         justify-content: space-evenly;
     }
 
-    .home-img {
+    .home-img img {
         width: 350px;
         height: 350px;
     }
@@ -156,7 +156,7 @@
         font-size: 2.5rem;
     }
 
-    .home-img {
+    .home-img img{
         width: 300px;
         height: 300px;
     }
