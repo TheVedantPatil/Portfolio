@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Boxcicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!--========== Header ==========-->
+    <header>
+        <div class="logo">Vedant</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home" class="active-link">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!--========== Home ==========-->
+    <section class="container home" id="home">
+        <div>
+            <h1 class="home-title">Hi, <br> I'm <span>Vedant</span><br>EXTC Engineer</h1>
+            <button class="button">Download CV</button>
+        </div>
+        <div class="home-image">
+            <img src="#" alt="Developer">
+        </div>
+    </section>
+
+    <!--========== About ==========-->
+    <section class="container about" id="about">
+        <h2 class="section-title">About</h2>
+        <div class="about-container">
+            <div class="about-img">
+                <img src="assets/img/About_Image.jpg" alt="About Image">
+            </div>
+
+            <div class="about-content">
+                <h2 class="about-title">I'm Vedant</h2>
+                <p class="about-description">
+                    I am a second-year EXTC Engineering student from Vidyalankar Institute of Technology, with a passion
+                    for technology and innovation.
+                    Learning JAVA, C, Python, and HTML, with hands-on PCB designing skills. Particularly interested in
+                    the software industry and Electronics Projects like Drone development.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--========== Skills ==========-->
+    <section class="container skills" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-container">
+
+            <!-- Skills Software -->
+            <div class="skill-software">
+                <h2 class="skill-subtitle">Software</h2>
+                <div class="skills-data">
+                    <div class="skills-names">
+                        <i class='bx bxl-html5 skills-icon'></i>
+                        <span class="skills-name">HTML5</span>
+                    </div>
+                    <div class="skills-bar skills-html"></div>
+                    <div><span class="skills-percentage">80%</span></div>
+                </div>
+                <div class="skills-data">
+                    <div class="skills-names">
+                        <i class='bx bxl-css3 skills-icon'></i>
+                        <span class="skills-name">CSS3</span>
+                    </div>
+                    <div class="skills-bar skills-css"></div>
+                    <div><span class="skills-percentage">65%</span></div>
+                </div>
+                <div class="skills-data">
+                    <div class="skills-names">
+                        <i class='bx bxl-javascript skills-icon'></i>
+                        <span class="skills-name">JavaScript</span>
+                    </div>
+                    <div class="skills-bar skills-js"></div>
+                    <div><span class="skills-percentage">20%</span></div>
+                </div>
+            </div>
+
+            <!-- Hardware Skills -->
+            <div class="skill-hardware">
+                <h2 class="skill-subtitle">Hardware</h2>
+                <div class="skills-data">
+                    <div class="skills-names">
+                        <i class='bx bxl-microchip skills-icon'></i>
+                        <span class="skills-name">Arduino</span>
+                    </div>
+                    <div class="skills-bar skills-arduino"></div>
+                    <div><span class="skills-percentage">50%</span></div>
+                </div>  
+                <div class="skills-data">
+                    <div class="skills-names">
+                        <i class='bx bxl-css3 skills-icon'></i>
+                        <span class="skills-name">Ki-CAD</span>
+                    </div>
+                    <div class="skills-bar skills-kicad"></div>
+                    <div><span class="skills-percentage">20%</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--========== Project ==========-->
+    <section class="container project" id="project">
+        <h2 class="section-title">Project</h2>
+        <div class="project-list">
+            <div>
+                <!-- <i class='bx bx-code-alt'></i> -->
+                <h2><b>Web Design</b></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <!-- <i class='bx bx-code-alt'></i> -->
+                <h2><b>Web Design</b></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <!-- <div>
+                <i class='bx bx-code-alt'></i>
+                <h2><b>Web Design</b></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#">Learn More</a>
+            </div> -->
+        </div>
+    </section>
+
+    <!--========== Contact ==========-->
+    <section class="container contact" id="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-container">
+            <form action="" class="contact-form">
+                <input type="text" placeholder="Name" class="contact-input">
+                <input type="email" placeholder="Email" class="contact-input">
+                <textarea name="" id="" cols="0" rows="10" class="contact-input"></textarea>
+                <input type="button" value="Submit" class="button">
+            </form>
+        </div>
+    </section>
+
+    <!--========== Footer ==========-->
+    <footer class="footer">
+        <p class="footer-title">Vedant</p>
+        <p>&#169; Vedant Patil. All rights reserved</p>
+    </footer>
+
+
+
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Fontawesome Fonts -->
+    <!-- <script src="https://kit.fontawesome.com/7c04e3bc91.js" crossorigin="anonymous"></script> -->
+    <!-- JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

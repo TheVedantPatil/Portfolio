@@ -1,0 +1,458 @@
+/*----------- Google Fonts ----------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+:root {
+    --color-1: #212f3d;
+    --color-2: #f5b041;
+
+    /*---------- Fonts ----------*/
+    --font-semi: 600;
+    --body-font: "Poppins", sans-serif;
+    --big-font-size: 2rem;
+    --h2-font-size: 1.5rem;
+    --normal-font-size: 1rem;
+    --smaller-font-size: 0.75rem;
+
+    /*---------- Margin ----------*/
+    --mb-2: 1rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
+
+    /*---------- Z index ----------*/
+    --z-back: -10;
+    --z-fixed: 100;
+}
+
+@media screen and (min-width: 968px) {
+    :root {
+        --big-font-size: 3.5rem;
+        --h2-font-size: 2rem;
+        --normal-font-size: 1rem;
+        --smaller-font-size: .875rem;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: var(--header-height) 0 0 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    color: var(--color-1);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-1);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+/* Section Header */
+.section-title {
+    position: relative;
+    color: var(--color-2);
+    text-align: center;
+    font-size: 2rem;
+}
+
+.section-title::after {
+    position: absolute;
+    content: "";
+    width: 64px;
+    height: 0.18rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 3rem;
+    background-color: var(--color-2);
+}
+
+/*========== Header ==========*/
+header {
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background: #fff;
+    padding: 0 15%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: var(--h2-font-size);
+    font-weight: bold;
+    color: var(--color-2);
+    cursor: default;
+}
+
+/* Navigation Menu */
+.nav-links {
+    display: flex;
+    font-weight: var(--font-semi);
+    gap: 2rem;
+}
+
+.nav-links a:hover {
+    color: var(--color-2);
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: var(--color-1);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* Container */
+.container {
+    padding: 3rem 15%;
+}
+
+/*========== Home ==========*/
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+.home-title {
+    font-size: 4rem;
+}
+
+.home-title span {
+    color: var(--color-2);
+}
+
+.button {
+    margin-top: var(--mb-2);
+    padding: 1rem 2rem;
+    background: var(--color-2);
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-semi);
+    transition: all 0.5s;
+}
+
+.button:hover {
+    box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.2);
+}
+
+.home-image img {
+    width: 400px;
+    height: 400px;
+    background: gray;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/*========== Responsive Home Section ==========*/
+@media (max-width: 768px) {
+    header {
+        padding: 0 10%;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: #fff;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    nav.active .nav-links {
+        max-height: 100vh;
+        border: .5px solid var(--color-1);
+        border-radius: 10px;
+    }
+
+    .nav-links a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .home {
+        text-align: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .home-title {
+        font-size: 2.5rem;
+    }
+
+    .home-image img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .container {
+        padding: 3rem 10%;
+    }
+}
+
+/*========== About ==========*/
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: var(--mb-6);
+}
+
+.about-img { 
+    flex-basis: 35%;   
+}
+
+.about-img img { 
+    object-fit: cover;
+    border-radius: 8%;
+    justify-self: center;
+}
+
+
+.about-content {
+    flex-basis: 50%;
+}
+
+.about-title {
+    font-size: var(--h2-font-size);
+    color: var(--color-2);
+}
+
+.about-description {
+    font-size: var(--normal-font-size);
+}
+
+/*========== Responsive About Section ==========*/
+@media (max-width: 768px) {
+    .about {
+        padding: 3rem 5%;
+    }
+    
+    .about-container  {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .about-img img{
+        width: 300px;
+    }
+
+    .about-title {
+        font-size: var(--h2-font-size);
+    }
+}
+
+@media (max-width: 512px) { 
+    .about-container { 
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+}
+
+/*========== Skills ==========*/
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: var(--mb-6);
+}
+
+.skill-software {
+    flex-basis: 45%;
+}
+
+.skill-hardware {
+    flex-basis: 45%;
+}
+
+.skill-subtitle {
+    margin-bottom: var(--mb-4);
+}
+
+.skills-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-weight: var(--font-semi);
+    padding: 0.5rem 1rem;
+    margin-bottom: var(--mb-4);
+    border-radius: 0.5rem;
+    box-shadow: 0px 10px 25px rgba(14, 36, 49, 0.25);
+}
+
+.skills-icon {
+    font-size: var(--h2-font-size);
+    margin-right: var(--mb-2);
+    color: var(--color-1);
+}
+
+.skills-names {
+    display: flex;
+    align-items: center;
+}
+
+.skills-bar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: var(--color-2);
+    height: 0.25rem;
+    border-radius: 0.5rem;
+    z-index: -10;
+}
+
+.skills-html {
+    width: 80%;
+}
+
+.skills-css {
+    width: 65%;
+}
+
+.skills-js {
+    width: 20%;
+}
+
+.skills-arduino {
+    width: 50%;
+}
+
+.skills-kicad {
+    width: 20%;
+}
+
+/*========== Responsive Skills Section ==========*/
+@media (max-width: 768px) {
+    .skill-software {
+        flex-basis: 100%;
+    }
+
+    .skill-hardware {
+        flex-basis: 100%;
+    }
+}
+
+/*========== Project ==========*/
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: var(--mb-6);
+}
+
+.project-list div {
+    background: rgba(255, 255, 255, 0);
+    padding: 40px;
+    font-weight: 300;
+    border-radius: 1rem;
+    color: var(--color-1);
+    cursor: pointer;
+    transition: all 0.4s linear;
+    border: 0.1px solid var(--color-1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-list div:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-10px);
+}
+
+/* .project-list div i {
+    font-size: var(--big-font-size);
+    margin-bottom: 10px;
+} */
+
+.project-list div h2 {
+    font-weight: var(--font-semi);
+    margin-bottom: var(--mb-2);
+}
+
+.project-list div a {
+    margin-top: var(--mb-2);
+    display: inline-block;
+}
+
+/*========== Contact ==========*/
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: var(--mb-6);
+}
+
+.contact-input {
+    width: 100%;
+    font-size: var(--normal-font-size);
+    font-weight: 600;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1.5px solid var(--color-1);
+    margin-bottom: var(--mb-2);
+}
+
+/*========== Footer ==========*/
+.footer {
+    background-color: var(--color-1);
+    text-align: center;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.footer p {
+    color: #fff;
+}
+
+.footer-title {
+    font-size: var(--h2-font-size);
+}
