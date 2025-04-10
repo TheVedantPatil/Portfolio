@@ -143,10 +143,10 @@ header {
 
 /*========== Home ==========*/
 .home {
+    padding: 10rem 15% 8rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 100vh;
 }
 
 .home-title {
@@ -177,10 +177,12 @@ header {
 .home-image img {
     width: 400px;
     height: 400px;
-    background: gray;
+    object-fit: cover;
+    object-position: center top;
     border-radius: 50%;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
+
 
 /*========== Responsive Home Section ==========*/
 @media (max-width: 768px) {

@@ -29,4 +29,3 @@ sr.reveal('.skills-container', { delay: 300, origin: 'top' });
 sr.reveal('.project-list', { delay: 300, interval: 200 });
 sr.reveal('.contact-form', { delay: 300 });
 
-
