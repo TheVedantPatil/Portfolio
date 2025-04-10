@@ -138,7 +138,7 @@ header {
 
 /* Container */
 .container {
-    padding: 3rem 15%;
+    padding: 7rem 15% 1rem;
 }
 
 /*========== Home ==========*/
@@ -234,7 +234,7 @@ header {
     }
 
     .container {
-        padding: 3rem 10%;
+        padding: 6rem 10% 1rem;
     }
 }
 
@@ -273,10 +273,6 @@ header {
 
 /*========== Responsive About Section ==========*/
 @media (max-width: 768px) {
-    .about {
-        padding: 3rem 5%;
-    }
-    
     .about-container  {
         flex-direction: column;
         gap: 2rem;
